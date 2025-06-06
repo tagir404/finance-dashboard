@@ -1,5 +1,6 @@
 @import 'tailwindcss';
 
-body {
-    font-family: 'Quicksand', sans-serif;
+@theme {
+    --font-sans: 'Raleway', sans-serif;
+    --color-primary: var(--color-amber-400);
 }
