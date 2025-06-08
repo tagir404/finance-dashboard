@@ -1,4 +1,7 @@
 <script setup lang="ts">
+import { formatAmount } from '@/utils/functions'
+import SectionTitle from './SectionTitle.vue'
+
 const props = defineProps<{
     title: string
     total: number
@@ -6,8 +9,8 @@ const props = defineProps<{
 </script>
 
 <template>
-    <div class="p-5 border border-gray-200 rounded-xl flex flex-col gap-2">
-        <h2>{{ props.title }}</h2>
-        <p>{{ props.total }}</p>
+    <div class="p-5 border border-gray-200 rounded-3xl shadow-md">
+        <SectionTitle class="mb-4">{{ props.title }}</SectionTitle>
+        <p class="text-2xl">{{ formatAmount(props.total) }}</p>
     </div>
 </template>
