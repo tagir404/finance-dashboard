@@ -4,6 +4,7 @@ import { formatAmount, formatDate } from '@/utils/functions'
 import { ref } from 'vue'
 import LabelText from './LabelText.vue'
 import SectionTitle from './SectionTitle.vue'
+import IconPlus from './icons/IconPlus.vue'
 
 const expenseHistoryItems = ref<ExpenseHistoryItem[]>([
     {
@@ -23,7 +24,14 @@ const expenseHistoryItems = ref<ExpenseHistoryItem[]>([
 
 <template>
     <div class="p-5 border border-gray-200 rounded-3xl shadow-md">
-        <SectionTitle class="mb-4">История расходов</SectionTitle>
+        <div class="flex justify-between mb-4">
+            <SectionTitle>История расходов</SectionTitle>
+            <button
+                class="rounded cursor-pointer w-10 h-10 bg-transparent hover:text-amber-400 transition"
+            >
+                <IconPlus />
+            </button>
+        </div>
         <table class="w-full">
             <thead class="text-xl">
                 <tr>
