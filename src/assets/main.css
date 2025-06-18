@@ -2,5 +2,6 @@
 
 @theme {
     --font-sans: 'Raleway', sans-serif;
-    --color-primary: var(--color-amber-400);
+    --color-primary: var(--color-blue-400);
+    --color-hover-primary: var(--color-blue-500);
 }

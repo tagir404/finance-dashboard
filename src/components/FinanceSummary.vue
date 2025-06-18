@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { formatAmount } from '@/utils/functions'
-import SectionTitle from './SectionTitle.vue'
+import SectionTitle from './ui/SectionTitle.vue'
 
 const props = defineProps<{
     title: string
